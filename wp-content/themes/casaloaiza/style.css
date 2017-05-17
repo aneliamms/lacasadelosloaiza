@@ -1,0 +1,22 @@
+
+/*
+Theme Name: La Casa de los Loaiza
+Author: Angel Mendoza
+Description:
+Version: 0.0.1
+*/
+body{
+	font-family: 'Poiret One', cursive !important;
+	font-weight: 500;
+}
+a{
+	text-decoration: none !important;
+	color:inherit !important;
+}
+footer{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: 
+}
