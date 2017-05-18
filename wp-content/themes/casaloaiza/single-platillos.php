@@ -3,10 +3,10 @@
 <div>
 	<center>
 		<div class="plate">
-			<h1><?php echo get_field('nombre')?></h1>
 			<img src="<?php echo get_field('imagen')?>"/>
+			<h1><?php echo get_field('nombre')?></h1>
 			<p><?php echo get_field('descripcion')?></p>
-		<div>
+		</div>
 	<center>
 </div>
 
