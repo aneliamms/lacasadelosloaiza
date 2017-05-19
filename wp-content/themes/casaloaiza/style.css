@@ -14,9 +14,9 @@ a{
 	color:inherit !important;
 }
 footer{
-	position: absolute;
+	position: relative;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: 
+	margin-top: 10%;
 }

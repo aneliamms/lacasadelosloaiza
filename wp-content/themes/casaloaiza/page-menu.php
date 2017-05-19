@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<?php require( '/get-categories.php');?>
+<?php require( 'get-categories.php');?>
 <!-- MEnu-->
 <div class="container">
 	

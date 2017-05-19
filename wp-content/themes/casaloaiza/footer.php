@@ -1,4 +1,4 @@
-
+		<div class="row"></div>
 		<footer>
 			<center><p>This is my footer</p></center>
 		</footer>
