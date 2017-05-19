@@ -67,3 +67,40 @@ video{
   font-family: 'Poiret One', cursive !important;
   font-size: 25px;
 }
+.contact-form textarea, input{
+  background: url('../images/white_paperboard.jpg');
+  opacity: 0.8;
+  color: #000000;
+  
+}
+.contact-form textarea:focus, input:focus{
+  outline: 1px solid #380d21;
+  box-shadow: 0px 0px 1px 1px rgba(255,255,255,0.9), 0px 0px 1px 3px rgba(0,0,0,0.9);
+}
+.contact-form input[type=submit]{
+    background-color: #380d21; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.contact-form input[type=submit]{
+    background-color: white;
+    color: black;
+    border: 2px solid #380d21;
+}
+
+.contact-form input[type=submit]:hover {
+  background-color: red !important;
+}
+#map-sucursales{
+  height: 500px;
+}

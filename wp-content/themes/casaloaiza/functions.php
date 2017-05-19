@@ -5,21 +5,17 @@ function casaloaiza_script_enqueue(){
 	wp_enqueue_style('font-menu', 'https://fonts.googleapis.com/css?family=Dancing+Script', array('customstyle') ,null,'all');
 	wp_enqueue_style('font-body', 'https://fonts.googleapis.com/css?family=Poiret+One', array() ,null,'all');
 	wp_enqueue_style('menu-font', 'http://fonts.googleapis.com/css?family=Raleway:300,500|Arvo:700', array() ,null,'all');
-
-	wp_enqueue_style('style', get_template_directory_uri().'/style.css', array() ,null,'all');
-	wp_enqueue_style('menu-css', get_template_directory_uri().'/css/menu.css', array() ,null,'all');
-	wp_enqueue_style('customstyle', get_template_directory_uri().'/css/casaloaiza.css', array('style') ,null,'all');
 	wp_enqueue_style('zocial', 'http://weloveiconfonts.com/api/?family=zocial', array() ,null,'all');
-	wp_enqueue_style('fontonicons', get_template_directory_uri().'/css/fontonicons.css', array() ,null,'all');
-
-
 	wp_enqueue_style('demo', get_template_directory_uri().'/css/demo.css', array() ,null,'all');
 	wp_enqueue_style('normalize', get_template_directory_uri().'/css/normalize.css', array() ,null,'all');
-
-	wp_enqueue_style('bootsrap-min', get_template_directory_uri().'/css/bootstrap.min.css', array() ,null, 'all');
-
+	wp_enqueue_style('fontonicons', get_template_directory_uri().'/css/fontonicons.css', array() ,null,'all');
+	wp_enqueue_style('bootsrap-css', get_template_directory_uri().'/css/bootstrap.min.css', array() ,null, 'all');
+	wp_enqueue_style('style', get_template_directory_uri().'/style.css', array('bootsrap-css') ,null,'all');
+	wp_enqueue_style('menu-css', get_template_directory_uri().'/css/menu.css', array('style') ,null,'all');
+	wp_enqueue_style('customstyle', get_template_directory_uri().'/css/casaloaiza.css', array('style') ,null,'all');
 
 	//Load Scripts
+	
 	wp_enqueue_script('jQuery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js', array(), null, true);
 	wp_enqueue_script('modernizr', get_template_directory_uri().'/js/modernizr.custom.js', array(), null, false);
 	wp_enqueue_script('bootstrap-js', get_template_directory_uri().'/js/bootstrap.min.js', array('jQuery') , null, true);
@@ -28,6 +24,10 @@ function casaloaiza_script_enqueue(){
 		wp_enqueue_script('menu-js', get_template_directory_uri().'/js/menu.js', array('jQuery'), null, true);
 		wp_enqueue_script('load-menu', get_template_directory_uri().'/js/load-menu.js', array('menu-js'), null, true);
 
+	}
+	if(is_page('contacto')){
+		wp_enqueue_script('Maps','http://maps.googleapis.com/maps/api/js?key=AIzaSyAlJQ0s4cUhU69fEIwL7yxgih4XllSBDTY',array('jQuery'), null, true);
+		wp_enqueue_script('Map-Scucursales',get_template_directory_uri().'/js/load-map.js',array('Maps'), null, true);
 	}
 
 }

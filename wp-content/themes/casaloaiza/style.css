@@ -8,6 +8,7 @@ Version: 0.0.1
 body{
 	font-family: 'Poiret One', cursive !important;
 	font-weight: 500;
+  	color: #fff ;
 }
 a{
 	text-decoration: none !important;
