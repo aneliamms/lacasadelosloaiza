@@ -290,7 +290,7 @@ class acf_field_google_map extends acf_field
 	   	// vars
 	   	$api = array(
 			'libraries'		=> 'places',
-			'key'			=> '',
+			'key'			=> 'AIzaSyAlJQ0s4cUhU69fEIwL7yxgih4XllSBDTY',
 			'client'		=> ''
 	   	);
 	   	

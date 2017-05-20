@@ -6,6 +6,9 @@
 	<?php wp_head(); ?>
 </head>
 <body>	
+<div class="toggle-button">
+	<span class="glyphicon glyphicon-menu-hamburger"></span>
+</div>
 	<center>
 		<?php wp_nav_menu(array('theme_location'=>'primary'));?>
 	</center>

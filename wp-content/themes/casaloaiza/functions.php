@@ -18,7 +18,10 @@ function casaloaiza_script_enqueue(){
 	
 	wp_enqueue_script('jQuery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js', array(), null, true);
 	wp_enqueue_script('modernizr', get_template_directory_uri().'/js/modernizr.custom.js', array(), null, false);
+	wp_enqueue_script('jQuery-ui', 'https://code.jquery.com/ui/1.12.1/jquery-ui.js', array(), null, false);
+
 	wp_enqueue_script('bootstrap-js', get_template_directory_uri().'/js/bootstrap.min.js', array('jQuery') , null, true);
+	wp_enqueue_script('responsive-js', get_template_directory_uri().'/js/responsive-menu.js', array('jQuery-ui') , null, true);
 
 	if(is_page( 'menu' )) {
 		wp_enqueue_script('menu-js', get_template_directory_uri().'/js/menu.js', array('jQuery'), null, true);
