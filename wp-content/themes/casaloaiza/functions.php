@@ -38,6 +38,7 @@ function casaloaiza_script_enqueue(){
 function casaloaiza_theme_setup(){
 	add_theme_support('menus');
 	add_theme_support('custom-header');
+	add_theme_support('widgets');
 
 
 	register_nav_menu('primary','Header Menu');

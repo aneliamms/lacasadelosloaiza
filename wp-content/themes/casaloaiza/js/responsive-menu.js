@@ -1,12 +1,11 @@
-$('.toggle-button').on('click', function(){
-
-	if($(this).find('span').hasClass('glyphicon-remove')){
-		$(this).find('span').removeClass('glyphicon-remove');
-		$(this).find('span').addClass('glyphicon-menu-hamburger');
-	}
-	else{
-		$(this).find('span').addClass('glyphicon-remove');
-		$(this).find('span').removeClass('glyphicon-menu-hamburger');
-	}
+$(document).ready(function(){
+	$('.responsive-menu ul').children('.logo-menu').prependTo('ul');
+	$('#nav-icon3').click(function(){
+		$(this).toggleClass('open');
+		if($(this).hasClass('open')){
+			$('.responsive-menu .menu-header-container').slideDown('slow');
+		}else{
+			$('.responsive-menu .menu-header-container').slideUp('slow');
+		}
+	});
 });
-
